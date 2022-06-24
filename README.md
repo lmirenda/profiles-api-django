@@ -1,3 +1,2 @@
-# Profiles REST API
-
-Profiles REST API course content.
+# recipe-app-api
+Recipe App API
