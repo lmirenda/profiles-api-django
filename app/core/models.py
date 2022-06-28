@@ -21,7 +21,7 @@ class UserProfileManager(BaseUserManager):
         email = self.normalize_email(email)
         user = self.model(name=name, email=email)
 
-        user.set_password(password)  # this is the method that hashes the password
+        user.set_password(password)
         user.save(using=self._db)
 
         return user

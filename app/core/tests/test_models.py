@@ -46,7 +46,11 @@ class ModelTests(TestCase):
         Test creating a new user without an email raises a Value error.
         """
         with self.assertRaises(ValueError):
-            get_user_model().objects.create_user(email=None, password='sample123', name='testname')
+            get_user_model().objects.create_user(
+                email=None,
+                password='sample123',
+                name='testname'
+            )
 
     def test_create_superuser(self):
         """
