@@ -128,4 +128,4 @@ class UserProfileFeedViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         """Sets the user profile to logged in user"""
-        serializer.save(user_profile=self.request.user)
+        serializer.save(user_profile_id=self.request.user)
